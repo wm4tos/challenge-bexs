@@ -1,1 +1,2 @@
-export { default as loadRoutes } from './loadRoutes';
+export { default as loadRoutes } from './load_routes';
+export * from './array';
