@@ -11,6 +11,8 @@ module.exports = {
   // The test environment that will be used for testing
   testEnvironment: "node",
 
+  moduleDirectories: ['node_modules', '.'],
+
   // A preset that is used as a base for Jest's configuration
   preset: 'ts-jest',
 };
