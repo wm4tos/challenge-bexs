@@ -14,7 +14,7 @@ export default class Queue {
     this.keys = new Set(items.map((item) => item.key));
     this.emitter = new EventEmitter();
 
-    this.emitter.on('add', () => this.items.sort((a, b) => a.value - b.value));
+    this.emitter.on('add', () => this.sort());
   }
 
   sort(): void {
