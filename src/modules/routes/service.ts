@@ -1,7 +1,7 @@
 import { compose } from 'src/common/helpers/operators';
 import Graph from '../graph/model';
 import { divideKeys, divideLines, getPathFromKeys } from './helpers';
-import { getRoutes } from './repository';
+import { addRoute, getRoutes } from './repository';
 
 export const getRoute = (from: string, to: string): string => {
   const formatPath = compose<string, unknown>(getPathFromKeys, divideKeys, divideLines);
@@ -10,3 +10,5 @@ export const getRoute = (from: string, to: string): string => {
 
   return graph.go(from, to);
 };
+
+export const addNewRoute = (route: string): void => addRoute(route);
