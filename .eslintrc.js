@@ -25,6 +25,7 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': ['error'],
     'comma-dangle': ['error', 'always-multiline'],
     'eol-last': ["error", "always"],
-    'import/prefer-default-export': 'off'
+    'import/prefer-default-export': 'off',
+    'radix': ['error', 'as-needed']
   },
 };
